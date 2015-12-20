@@ -19,8 +19,3 @@ $(call inherit-product-if-exists, vendor/amazon/soho/soho-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Recovery
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/init.recovery.bowser.rc:root/init.recovery.bowser.rc \
-	$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
